@@ -1,0 +1,14 @@
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.GeneratedMSBuildEditorConfig.editorconfig
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.AssemblyInfoInputs.cache
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.AssemblyInfo.cs
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.csproj.CoreCompileInputs.cache
+E:\gameransanmoi\bin\Debug\net8.0\gameransanmoi.exe
+E:\gameransanmoi\bin\Debug\net8.0\gameransanmoi.deps.json
+E:\gameransanmoi\bin\Debug\net8.0\gameransanmoi.runtimeconfig.json
+E:\gameransanmoi\bin\Debug\net8.0\gameransanmoi.dll
+E:\gameransanmoi\bin\Debug\net8.0\gameransanmoi.pdb
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.dll
+E:\gameransanmoi\obj\Debug\net8.0\refint\gameransanmoi.dll
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.pdb
+E:\gameransanmoi\obj\Debug\net8.0\gameransanmoi.genruntimeconfig.cache
+E:\gameransanmoi\obj\Debug\net8.0\ref\gameransanmoi.dll

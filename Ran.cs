@@ -16,11 +16,6 @@ namespace HL2
         public Point Head { set; get; }
         public List<Point> Body { set; get; }
 
-        /// <summary>
-        /// Di chuyển thân rắn
-        /// </summary>
-        /// <param name="aRow"></param>
-        /// <param name="aColumn"></param>
         private void moveBody(int aRow, int aColumn)
         {
             for (int i = 0; i < this.Body.Count; i++)
@@ -38,10 +33,10 @@ namespace HL2
 
         public bool IsHeadInBody()
         {
-            for(int i = 0; i < this.Body.Count; i++)
+            for (int i = 0; i < this.Body.Count; i++)
             {
                 Point element = this.Body[i];
-                if(element.Row == this.Head.Row && element.Column == this.Head.Column)
+                if (element.Row == this.Head.Row && element.Column == this.Head.Column)
                 {
                     return true;
                 }
@@ -49,11 +44,15 @@ namespace HL2
             return false;
         }
 
+        public bool IsHeadInWall(int n, int m)
+        {
+            return this.Head.Row <= 0 || this.Head.Row >= n - 1 || this.Head.Column <= 0 || this.Head.Column >= m - 1;
+        }
+
         public void move(string direction, int n, int m)
         {
             if (direction == Direction.DIRECTION_RIGHT)
             {
-                //colum++
                 int currentColumn = this.Head.Column;
                 this.Head.Column = currentColumn + 1;
 
@@ -66,7 +65,6 @@ namespace HL2
             }
             else if (direction == Direction.DIRECTION_LEFT)
             {
-                //column--
                 int currentColumn = this.Head.Column;
                 this.Head.Column = currentColumn - 1;
 
@@ -79,7 +77,6 @@ namespace HL2
             }
             else if (direction == Direction.DIRECTION_UP)
             {
-                //row--
                 int currentRow = this.Head.Row;
                 this.Head.Row = currentRow - 1;
 
@@ -92,7 +89,6 @@ namespace HL2
             }
             else if (direction == Direction.DIRECTION_DOWN)
             {
-                //row++
                 int currentRow = this.Head.Row;
                 this.Head.Row = currentRow + 1;
 
@@ -105,5 +101,4 @@ namespace HL2
             }
         }
     }
-
 }
